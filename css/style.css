@@ -89,6 +89,24 @@ nav.scrolled { box-shadow: 0 2px 20px rgba(0,0,0,0.08); }
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
 
+/* Nav social icons */
+.nav-social {
+  display: flex; align-items: center; gap: .6rem;
+}
+.nav-social a {
+  display: flex; align-items: center; justify-content: center;
+  width: 34px; height: 34px; border-radius: 50%;
+  color: var(--text-lt);
+  border: 1.5px solid rgba(168,216,234,0.5);
+  transition: color .2s, border-color .2s, background .2s, transform .2s;
+}
+.nav-social a:hover {
+  color: var(--green);
+  border-color: var(--green);
+  background: rgba(45,92,79,0.06);
+  transform: translateY(-2px);
+}
+
 /* ── HERO ──────────────────────────────────────────────── */
 #accueil {
   min-height: 100vh;
@@ -435,6 +453,7 @@ footer strong { color: white; }
   .nav-links a { display: block; padding: .75rem 2rem; font-size: .9rem; }
   .btn-nav { margin: .5rem 2rem; display: inline-block; }
   .hamburger { display: flex; }
+  .nav-social a { width: 30px; height: 30px; }
 
   #accueil { grid-template-columns: 1fr; min-height: auto; }
   .hero-content { padding: 3rem 1.5rem 2rem; }
