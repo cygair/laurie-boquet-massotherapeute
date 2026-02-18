@@ -14,24 +14,30 @@ Site statique d'une seule page (HTML/CSS/JS) hébergé sur GitHub Pages.
 - **Services** — Massage suédois (technique Denevers), thérapeutique, prénatal et enfants
 - **Tarifs** — 90 $ / 1 h · 120 $ / 1 h 30 · 150 $ / 2 h (+ frais de déplacement)
 - **À propos** — Parcours de Laurie (reconversion depuis les laboratoires, formation à l'école À Fleur de Peau)
+- **Réservation** — Widget Square Appointments intégré
 - **Contact** — Formulaire (Formspree), téléphone (514) 578-7804, zone de service
 
 ## Technologies
 
-- HTML5 / CSS3 vanille (sans framework)
+- HTML5 / CSS3 / JS vanille (sans framework)
 - Polices Google Fonts : Cormorant Garamond + Jost
+- Réservation en ligne : [Square Appointments](https://squareup.com/appointments)
 - Formulaire de contact : [Formspree](https://formspree.io)
 - Hébergement : GitHub Pages
 
 ## Structure des fichiers
 
 ```
-├── index.html          # Page principale (tout-en-un)
-├── CNAME               # Domaine personnalisé (laurieboquetmasso.com)
+├── index.html              # Structure HTML de la page
+├── css/
+│   └── style.css           # Tous les styles (variables, layout, responsive)
+├── js/
+│   └── main.js             # Interactions : navbar, menu, animations, formulaire
 ├── images/
-│   ├── logo.jpg        # Logo / photo de profil (navbar + favicon)
+│   ├── logo.jpg            # Logo / photo de profil (navbar + favicon)
 │   ├── salle-massage.png   # Photo hero
 │   └── photo-laurie.png    # Photo section À propos
+├── CNAME                   # Domaine personnalisé (laurieboquetmasso.com)
 └── README.md
 ```
 
@@ -41,7 +47,7 @@ Le formulaire de contact utilise Formspree. Pour le configurer :
 
 1. Créer un compte sur [formspree.io](https://formspree.io)
 2. Créer un nouveau formulaire et copier l'ID généré
-3. Dans `index.html`, remplacer `VOTRE_ID_FORMSPREE` par votre ID dans l'URL :
+3. Dans `js/main.js`, remplacer l'ID dans l'URL fetch :
    ```
    https://formspree.io/f/VOTRE_ID_FORMSPREE
    ```
