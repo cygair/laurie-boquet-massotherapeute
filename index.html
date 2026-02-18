@@ -303,6 +303,14 @@
       color: var(--pink); margin-top: .5rem;
     }
 
+    /* ── BOOKING ───────────────────────────────────────────── */
+    #booking { background: var(--cream); }
+    .booking-inner {
+      max-width: 900px; margin: 0 auto; text-align: center;
+    }
+    .booking-inner h2 { color: var(--green); margin-bottom: 1rem; }
+    .booking-inner > p { color: var(--text-lt); margin-bottom: 2.5rem; max-width: 560px; margin-left: auto; margin-right: auto; }
+
     /* ── CONTACT ───────────────────────────────────────────── */
     #contact { background: white; }
     .contact-inner {
@@ -466,7 +474,7 @@
       <li><a href="#services">Services</a></li>
       <li><a href="#tarifs">Tarifs</a></li>
       <li><a href="#apropos">À propos</a></li>
-      <li><a href="#contact" class="btn-nav">Rendez-vous</a></li>
+      <li><a href="#booking" class="btn-nav">Rendez-vous</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Menu">
       <span></span><span></span><span></span>
@@ -480,7 +488,7 @@
       <h1>Le bien-être,<br><em>chez vous</em></h1>
       <p>Pas besoin de vous déplacer — je viens chez vous avec tout mon matériel pour un moment de détente unique, adapté à vos besoins du moment.</p>
       <div class="hero-cta">
-        <a href="#contact" class="btn-primary">Prendre rendez-vous</a>
+        <a href="#booking" class="btn-primary">Prendre rendez-vous</a>
         <a href="#services" class="btn-outline">Découvrir les soins</a>
       </div>
       <div class="hero-phone" style="margin-top:1.5rem;">
@@ -573,6 +581,16 @@
       </blockquote>
       <p>Minutieuse et attentionnée, je m'efforce de vous offrir le meilleur de mes connaissances. C'est dans ce but que j'approfondis ma technique vers une approche thérapeutique, afin de répondre au mieux à votre besoin.</p>
       <div class="apropos-signature">— Laurie</div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section id="booking">
+    <div class="booking-inner fade-in">
+      <div class="section-label" style="justify-content:center;">Réservation en ligne</div>
+      <h2>Réservez votre séance</h2>
+      <p>Choisissez directement le créneau qui vous convient. La réservation est simple, rapide et sécurisée.</p>
+      <!-- Start Square Appointments Embed Code --><script src='https://app.squareup.com/appointments/buyer/widget/4nm9k3tzopy2g9/LW8RRXHSW4A8M.js'></script><!-- End Square Appointments Embed Code -->
     </div>
   </section>
 
