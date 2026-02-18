@@ -6,7 +6,7 @@ Site web vitrine pour **Laurie Boquet**, massothérapeute à domicile desservant
 
 Site statique d'une seule page (HTML/CSS/JS) hébergé sur GitHub Pages.
 
-**URL :** https://laurie-boquet-massotherapeute.github.io
+**URL :** https://laurieboquetmasso.com
 
 ## Contenu du site
 
@@ -27,6 +27,7 @@ Site statique d'une seule page (HTML/CSS/JS) hébergé sur GitHub Pages.
 
 ```
 ├── index.html          # Page principale (tout-en-un)
+├── CNAME               # Domaine personnalisé (laurieboquetmasso.com)
 ├── images/
 │   ├── logo.jpg        # Logo / photo de profil (navbar + favicon)
 │   ├── salle-massage.png   # Photo hero
@@ -48,6 +49,22 @@ Le formulaire de contact utilise Formspree. Pour le configurer :
 ## Déploiement
 
 Le site est automatiquement déployé via GitHub Pages à chaque push sur la branche `main`.
+
+## Domaine personnalisé
+
+Le domaine `laurieboquetmasso.com` est enregistré chez **Namecheap** et pointé vers GitHub Pages.
+
+**Fichier CNAME** : contient `laurieboquetmasso.com` (requis par GitHub Pages).
+
+**Enregistrements DNS à configurer chez Namecheap (Advanced DNS) :**
+
+| Type  | Host | Valeur                                          |
+|-------|------|-------------------------------------------------|
+| A     | @    | 185.199.108.153                                 |
+| A     | @    | 185.199.109.153                                 |
+| A     | @    | 185.199.110.153                                 |
+| A     | @    | 185.199.111.153                                 |
+| CNAME | www  | laurie-boquet-massotherapeute.github.io         |
 
 ## Contact
 
