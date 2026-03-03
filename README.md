@@ -15,7 +15,8 @@ Site statique d'une seule page (HTML/CSS/JS) hébergé sur GitHub Pages.
 - **Tarifs** — 90 $ / 1 h · 120 $ / 1 h 30 · 150 $ / 2 h (+ frais de déplacement)
 - **À propos** — Parcours de Laurie (reconversion depuis les laboratoires, formation à l'école À Fleur de Peau)
 - **Réservation** — Widget Square Appointments intégré
-- **Contact** — Formulaire (Formspree), téléphone (514) 578-7804, zone de service
+- **Contact** — Formulaire (Formspree), téléphone (514) 578-7804, WhatsApp, zone de service
+- **Réseaux sociaux** — Liens Facebook et Instagram dans la barre de navigation
 
 ## Technologies
 
@@ -38,6 +39,8 @@ Site statique d'une seule page (HTML/CSS/JS) hébergé sur GitHub Pages.
 │   ├── salle-massage.png   # Photo hero
 │   └── photo-laurie.png    # Photo section À propos
 ├── CNAME                   # Domaine personnalisé (laurieboquetmasso.com)
+├── sitemap.xml             # Plan du site pour les moteurs de recherche
+├── robots.txt              # Directives pour les robots d'indexation
 └── README.md
 ```
 
